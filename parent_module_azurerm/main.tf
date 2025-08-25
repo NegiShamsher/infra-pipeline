@@ -1,13 +1,13 @@
 module "rg" {
   source   = "../child_module_azurerm/resource_group"
-  rgname  = "resource"
+  rgname  = "r2r"
   location = "central india"
 }
 
 module "stgacct" {
   depends_on = [module.rg]
   source     = "../child_module_azurerm/storage_account"
-  stgname   = "storage"
+  stgname   = "coca"
   location   = "central india"
   rgname    = module.rg.rename
 }
