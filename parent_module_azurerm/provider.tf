@@ -1,8 +1,8 @@
 terraform {
-    #       backend "azurerm" {
-    # resource_group_name  = "sunnypapa"
-    # storage_account_name = "penasonic15aug"
-    # container_name       = "tijorri"
+ backend "azurerm" {
+    resource_group_name  = "sunnypapa"
+    # storage_account_name = "ravan"
+    # container_name       = "container"
     # key                  = "prod.terraform.tfstate"
   
 
